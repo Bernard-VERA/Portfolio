@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -10,7 +11,8 @@ body{
 header{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%,0);
     width: 100%;
     background: white;
     z-index: 999;
@@ -18,10 +20,16 @@ header{
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
 }
 
+.mw1320{
+    max-width: 1320px;
+    margin-inline: auto;
+}
+
 .header-menu{
     display: flex;
     list-style: none;
     align-items: center;
+    padding: 0 10px;
     font-size: 1.2rem;
 }
 
@@ -37,6 +45,10 @@ header{
 
 .header-menu li a:hover{
     background-color: rgb(235 235 235);
+}
+
+.header-logo{
+    margin: 0 20px;
 }
 
 .slider{
@@ -73,7 +85,6 @@ h2{
     70px;
 }
 
-
 p{
     font-size: 1.5rem;
     line-height: 1.5em;
@@ -87,6 +98,7 @@ p{
 
 .section{
     padding: 70px 20px;
+    scroll-margin-top: 60px;
 }
 
 .boxed{
@@ -216,6 +228,7 @@ p{
     justify-content:space-evenly;
 
 }
+
 .w20{
     width: 20%;
     border: 2px dashed azure;
