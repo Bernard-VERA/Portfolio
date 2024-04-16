@@ -11,6 +11,20 @@
         <link rel="stylesheet" href="styles/style.css" type="text/css">
     </head>
     <body>
+        <header>
+            <div class="boxed">
+                <div class="flex space-between">
+                    <img class="header-logo" src="images/css-logo.png">
+                    <ul class="header-menu">
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#competences">Mes compétences</a></li>
+                        <li><a href="#realisations">Mes réalisations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <div class="slider">
             <img src="images/slider2.jpg" class="slider-background">
             <div class="slider-content">
@@ -19,11 +33,11 @@
             </div>
         </div>
 
-        <div class="section">
+        <div id="a-propos" class="section">
             <div class="boxed">
                 <div class="flex">
                     <div class="w40">
-                        <h2>A propos</h2>
+                        <h2>À propos</h2>
                     </div>
                     <div class="w60">
                         <p>Passionné depuis toujours par l'informatique, j'ai décidé aujourd'hui d'en faire mon métier, en devenant développeur full-stack.  Les possibilités infinies de création, les défis techniques et la satisfaction de voir mes projets prendre vie sont autant de raisons qui m’ont poussé à me reconvertir. Mon but est de devenir un développeur web polyvalent, capable de concevoir des sites intuitifs et performants.</p>
@@ -32,7 +46,7 @@
             </div>
         </div>
 
-        <div class="section dark">
+        <div id="competences" class="section dark">
             <div class="boxed text-center">
                 <h2>Mes compétences</h2>
                 <div class="flex gap20">
@@ -46,7 +60,7 @@
                     </div>
                     <div class="w14 skill">
                         <img src="images/js-logo.png">
-                        <h3>JAVASCRIPT</h3>
+                        <h3>JS</h3>
                     </div>
                     <div class="w14 skill">
                         <img src="images/react-logo.png">
@@ -57,52 +71,56 @@
                         <h3>NODE</h3>
                     </div>
                     <div class="w14 skill">
+                        <img src="images/mongo-logo.png">
+                        <h3>MongoDB</h3>
+                    </div>
+                    <div class="w14 skill">
                         <img src="images/seo-logo.png">
                         <h3>SEO</h3>
                     </div>
                     <div class="w14 skill">
                         <img src="images/github-logo.png">
-                        <h3>GITHUB</h3>
+                        <h3>GitHub</h3>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section">
+        <div id="realisations" class="section">
             <div class="boxed text-center">
                 <h2>Mes réalisations</h2>
-                <div class="flex wrap gap20 space-between">
-                    <div class="w32 realisation">
+                <div class="flex wrap gap50 space-between">
+                    <div class="w30 realisation">
                         <a href="/">
                             <img src="images/booki.jpg">
                             <h3>Booki</h3>
                         </a>
                     </div>
-                    <div class="w32 realisation">
+                    <div class="w30 realisation">
                         <a href="/">
                             <img src="images/bluel.jpg">
                             <h3>Sophie Bluel</h3>
                         </a>
                     </div>
-                    <div class="w32 realisation">
+                    <div class="w30 realisation">
                         <a href="/">
                             <img src="images/carducci.jpg">
                             <h3>Nina Carducci</h3>
                         </a>
                     </div>
-                    <div class="w32 realisation">
+                    <div class="w30 realisation">
                         <a href="/">
                             <img src="images/kasa.jpg">
                             <h3>Kasa</h3>
                         </a>
                     </div>
-                    <div class="w32 realisation">
+                    <div class="w30 realisation">
                         <a href="/">
                             <img src="images/qwenta.jpg">
                             <h3>Menu Maker</h3>
                         </a>
                     </div>
-                    <div class="w32 realisation">
+                    <div class="w30 realisation">
                         <a href="/">
                             <img src="images/huissier.jpg">
                             <h3>Le Clerc d'Huissier</h3>
@@ -111,7 +129,28 @@
                 </div>
             </div>
         </div>
-        
+        <div id="contact" class="section dark">
+            <div class="boxed text-center">
+                <h2>Contactez-moi</h2>
+                <div class="contact-links">
+                    <div class="w20">
+                        <a class="mailto-link" href="/">
+                            <img  class="mailto-img"src="images/email-48.png">
+                            <span class="mailto-title">E-MAIL</span>
+                            <span class="mailto-text">Adresse E-mail</span>
+                        </a>
+                    </div>
+                    <div class="w20">
+                        <a class="mailto-link" href="/">
+                            <img class="mailto-img" src="images/linkedin-48.png">
+                            <span class="mailto-title" >LINKEDIN</span>
+                            <span class="mailto-text">Lien vers LinkedIn</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </body>
     <script src="js/app.js"></script>
 </html>
