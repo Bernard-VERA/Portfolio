@@ -15,7 +15,7 @@ header{
     transform: translate(-50%,0);
     width: 100%;
     background: white;
-    z-index: 999;
+    z-index: 10;
     padding-block: 10px;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
 }
@@ -266,4 +266,111 @@ p{
 
 .mailto-text{
     display: block;
+}
+
+.modal{
+    display: flex;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.modal.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content{
+    background-color: white;
+    max-width: 1280px;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    border-radius: 15px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    max-height: 60px;
+}
+
+.modal-body{
+    box-sizing: border-box;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.modal-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.w50{
+    width: 50%;
+}
+
+.modal-img{
+    display: block;
+    object-fit: scale-down;
+    padding: 10px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.2));
+}
+
+.modal-text{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-text p{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.modal-footer{
+    display: flex;
+    padding: 25px;
+    gap: 80px;
+    justify-content: center;
+}
+
+.modal-footer a{
+    width: 80px;
+    text-align: center;
+    padding: 6px 35px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    color: #000000;
+    border-radius: 25px;
+}
+
+.modal-footer a:hover{
+    background-color: #000000;
+    color: white;
 }
