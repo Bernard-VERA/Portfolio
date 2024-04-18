@@ -45,6 +45,10 @@ header{
 
 .header-menu li a:hover{
     background-color: rgb(235 235 235);
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02);
+    transition: .2s ease;
 }
 
 .header-logo{
@@ -300,11 +304,17 @@ p{
 
 .modal-close{
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 20px;
     font-size: 28px;
     font-weight: 500;
     cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.modal-close:hover{
+    background-color: rgb(235 235 235);
 }
 
 .modal-header{
@@ -331,7 +341,7 @@ p{
 
 .modal-img{
     display: block;
-    object-fit: scale-down;
+    object-fit: cover;
     padding: 10px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.2));
@@ -373,4 +383,8 @@ p{
 .modal-footer a:hover{
     background-color: #000000;
     color: white;
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02);
+    transition: .2s ease;
 }
