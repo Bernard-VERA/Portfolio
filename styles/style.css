@@ -142,6 +142,7 @@ p{
     text-align: center;
 }
 
+
 .w14{
     width: 14%;
 }
@@ -166,8 +167,8 @@ p{
     text-align: center;
 }
 
-.w30{
-    width: 30%;
+.real{
+    justify-content: space-between;  
 }
 
 .wrap{
@@ -183,6 +184,7 @@ p{
 }
 
 .realisation{
+    width: 30%;
     height: fit-content;
     position: relative;
     filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.2));
@@ -341,7 +343,8 @@ p{
 
 .modal-img{
     display: block;
-    object-fit: cover;
+    align-self: start;
+    object-fit: contain;
     padding: 10px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.2));
@@ -387,4 +390,47 @@ p{
     -webkit-transform: scale(1.02); /* Safari 3-8 */
     transform: scale(1.02);
     transition: .2s ease;
+}
+
+@media screen and (max-width: 1080px)  {
+
+    .boxed{
+        max-width: 90%;
+    }
+    .realisation{
+        width: 46%;
+    }
+
+    .tablet{
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+
+    .medium{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .w14{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 940px)  {
+
+    .realisation{
+        width: 46%
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .wmobile100{
+        width: 100%;
+    }
+
+    .boxed{
+        max-width: 90%;
+    }
 }
