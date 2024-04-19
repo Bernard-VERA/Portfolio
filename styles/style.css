@@ -393,17 +393,29 @@ p{
 }
 
 @media screen and (max-width: 1080px)  {
+    h1{
+        font-size: 3.5rem;
+    }
 
-    .boxed{
-        max-width: 90%;
+    .slider-content p {
+        font-size: 1.5rem;
+    }
+    .w40{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .mcenter{
+        justify-content: center;
+        text-align: center;
     }
     .realisation{
-        width: 46%;
+        width: 48%;
     }
 
     .tablet{
-        margin-left: 20px;
-        padding-right: 10px;
+        margin-left: 12px;
+        padding-right: 12px;
     }
 
     .medium{
@@ -414,12 +426,47 @@ p{
     .w14{
         width: 22%;
     }
+
+    .gap50{
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 940px)  {
+    
+    .slider{
+        min-height: 60vh;
+    }
 
+    h1{
+        font-size: 3rem;
+    }
+
+    .slider-content p{
+        font-size: 1.2rem;
+    }
+    .section{
+        padding: 35px 10px;
+    }
+    h2{
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+    .header-menu{
+        font-size: 1rem;
+    }
+
+    .w60{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
     .realisation{
-        width: 46%
+        width: 48%
     }
 
     .column{
@@ -427,10 +474,46 @@ p{
     }
 
     .wmobile100{
-        width: 100%;
+        width: 98%;
+    }   
+}
+
+@media screen and (max-width: 800px) {
+
+    .slider-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    h1{
+        font-size: 2.2rem;
     }
 
-    .boxed{
-        max-width: 90%;
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .realisation:hover h3{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    .w14{
+        width: 46%;
+    }
+
+    .realisation{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .realisation{
+        width: 98%;
     }
 }
