@@ -76,6 +76,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    text-wrap: balance;
 }
 
 h1{
@@ -518,6 +519,44 @@ p{
 
 @media screen and (max-width: 610px) {
     
+   
+    header {
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+   
+    header .header-menu {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        height: 25vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        display: none;
+    }
+
+    header:hover .header-menu{
+        display: flex;
+    }
+
+    .section{
+        scroll-margin-top: 210px;
+    }
+
     h1{
         font-size: 2.2rem;
     }
@@ -569,5 +608,12 @@ p{
 
     .realisation{
         width: 98%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .w14 {
+        width: 90%;
     }
 }
