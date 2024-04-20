@@ -524,10 +524,10 @@ p{
         font-size: 1.2rem;
         opacity: 1;
         color: white;
-        text-shadow: 5px 7px 15px #433f3f,
-                     -5px 7px 15px #433f3f,
-                     -5px -7px 15px #433f3f,
-                     5px -7px 15px #433f3f;
+        text-shadow: 2px 2px 15px #ddd2d2,
+                     -2px 2px 15px #433f3f,
+                     -2px -2px 15px #ddd2d2,
+                     2px -2px 15px #433f3f;
     }
 
     .mailto-img {
