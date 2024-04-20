@@ -133,7 +133,7 @@ p{
 }
 
 .dark{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/slider2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/slider.webp);
     background-size: cover;
     background-position-y: 50%;
     color: azure;
@@ -142,7 +142,6 @@ p{
 .text-center{
     text-align: center;
 }
-
 
 .w14{
     width: 14%;
@@ -308,8 +307,7 @@ p{
 .modal-close{
     position: absolute;
     top: 15px;
-    right: 20px;
-   
+    right: 20px; 
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
@@ -395,89 +393,94 @@ p{
 }
 
 @media screen and (max-width: 1080px)  {
-    h1{
+
+    h1 {
         font-size: 3.5rem;
     }
 
     .slider-content p {
         font-size: 1.5rem;
     }
+
     .w40{
         padding-left: 0px;
         padding-right: 0px;
     }
 
-    .mcenter{
+    .mcenter {
         justify-content: center;
         text-align: center;
     }
-    .realisation{
+
+    .realisation {
         width: 48%;
     }
 
-    .tablet{
+    .tablet {
         margin-left: 12px;
         padding-right: 12px;
     }
 
-    .medium{
+    .medium {
         flex-wrap: wrap;
         justify-content: center;
     }
     
-    .w14{
+    .w14 {
         width: 22%;
     }
 
-    .gap50{
+    .gap50 {
         gap: 20px;
     }
 }
 
-@media screen and (max-width: 940px)  {
+@media screen and (max-width: 940px) {
     
-    .slider{
+    .slider {
         min-height: 60vh;
     }
 
-    h1{
+    h1 {
         font-size: 3rem;
         padding-top: 50px;
     }
 
-    .slider-content p{
+    .slider-content p {
         font-size: 1.2rem;
     }
-    .section{
+
+    .section {
         padding: 35px 10px;
     }
-    h2{
+
+    h2 {
         font-size: 2rem;
         margin-bottom: 35px;
     }
 
-    p{
+    p {
         font-size: 1.2rem;
     }
 
-    .header-menu{
+    .header-menu {
         font-size: 1rem;
     }
 
-    .w60{
+    .w60 {
         padding-left: 0px;
         padding-right: 0px;
     }
     
-    .realisation{
+    .realisation {
         width: 48%
     }
 
-    .column{
+    .column {
         flex-direction: column;
     }
 
-    .wmobile100{
+    .wmobile100 {
         width: 98%;
     }
     
@@ -501,23 +504,37 @@ p{
     .header-menu li a {
         padding: 5px 10px;
     }
-    .slider-content{
+    .slider-content {
         width: 90%;
     }
 
-    .slider-content p{
+    .slider-content p {
         margin-top: 20px;
     }
 
-    .header-menu{
+    .header-menu {
         font-size: 0.7rem;
+    }
+
+    .realisation img {
+        filter: brightness(80%);
+    }
+
+    .realisation h3 {
+        font-size: 1.2rem;
+        opacity: 1;
+        color: white;
+        text-shadow: 5px 7px 15px #433f3f,
+                     -5px 7px 15px #433f3f,
+                     -5px -7px 15px #433f3f,
+                     5px -7px 15px #433f3f;
     }
 
     .mailto-img {
         width: 36px;
     }
 
-    .modal-container{
+    .modal-container {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
@@ -526,47 +543,45 @@ p{
         gap: 45px;
     }
 
-    .modal-content{
+    .modal-content {
         width: 100%;
     }
 
-    .modal-img{
+    .modal-img {
         width: 100%;
         position: relative;
         padding: 0;
     }
 
-    .modal-text{
+    .modal-text {
         width: 100%;
         padding: 0;
     }
 
-    .modal-text p{
+    .modal-text p {
         font-size: 14px;
     }
 
-    .modal h2{
+    .modal h2 {
         margin-bottom: 0;
         margin-top: 20px;
     }
 
-    .modal-close{
+    .modal-close {
        width: 16px;
        height: auto;
     }
-
 }
 
 @media screen and (max-width: 610px) {
     
-   
     header {
         height: 60px;
         justify-content: center;
         align-items: center;
     }
 
-    .header-logo{
+    .header-logo {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -593,36 +608,39 @@ p{
         display: flex;
     }
 
-    .section{
+    .section {
         scroll-margin-top: 210px;
     }
 
-    h1{
+    h1 {
         font-size: 2.2rem;
     }
 
-    h2{
+    h2 {
         font-size: 1.5rem;
     }
 
-    .realisation:hover h3{
+    p {
         font-size: 1rem;
     }
 
-    p{
-        font-size: 1rem;
-    }
-    .w14{
+    .w14 {
         width: 46%;
     }
 
-    .realisation{
+    .realisation {
         width: 46%;
     }
+
+    .realisation h3 {
+        font-size: 1rem;
+    }
+
     .w20 {
         width: 75%;
         padding: 5px 30px;
     }
+
     .contact-links {
         flex-wrap: wrap;
         flex-direction: column;
@@ -643,15 +661,24 @@ p{
         font-size: 0.6rem;
     }
 
-    .modal h2{
+    .modal {
+        padding: 0.7rem;
+    }
+
+    .modal-header {
+        padding: 5px;
+    }
+
+    .modal h2 {
         font-size: 1rem;
     }
 
-    .modal-footer{
+    .modal-footer {
         gap: 40px;
+        padding: 15px;
     }
 
-    .modal-footer a{
+    .modal-footer a {
         width: 50px;
         font-size: 14px;
         padding: 4px 20px;
@@ -660,18 +687,18 @@ p{
 
 @media screen and (max-width: 450px) {
 
-    .realisation{
+    .realisation {
         width: 98%;
     }
 
-    .modal-footer{
+    .modal-footer {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .modal-text p{
+    .modal-text p {
         font-size: 12px;
     }
 }
