@@ -10,12 +10,34 @@
         <link rel="stylesheet" href="styles/style.css" type="text/css">
         <link rel="icon" type="image/png" href="favicon.png">
         <meta name="description" content="Bernard VERA, développeur web fullstack, avec des compétences en HTML, CSS, Javascript, React, Node, MongoDB, SEO et Github.">
+        <!--Meta tags pour Twitter (x)-->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Bernard Vera - Développeur web Fullstack, Frontend et Backend - Marseille" />
+        <meta name="twitter:description" content= "Passionné par le développement web, j'ai acquis de solides compétences en HTML/CSS, JavaScript, React, et Node.js. Je souhaite maintenant pouvoir exprimer mon sens de la création, en concevant et développant des sites web et des applications. Je suis capable de gérer à la fois le Front-end et le Back-end, tout en optimisant les performances et la sécurité."/>
+        <meta name="twitter:image" content= "https://bernard-vera.github.io/Portfolio/images/twitter.jpg"/>
+        <!--Meta tags Open Graph pour Facebook-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Bernard VERA, développeur web fullstack, avec des compétences en HTML, CSS, Javascript, React, Node, MongoDB, SEO et Github.">
+        <meta property="og:url" content="https://bernard-vera.github.io/Portfolio/">
+        <meta property="og:image" content="https://bernard-vera.github.io/Portfolio/images/facebook.jpg">
+        <meta property="og:description" content="Passionné par le développement web, j'ai acquis de solides compétences en HTML/CSS, JavaScript, React, et Node.js. Je souhaite maintenant pouvoir exprimer mon sens de la création, en concevant et développant des sites web et des applications. Je suis capable de gérer à la fois le Front-end et le Back-end, tout en optimisant les performances et la sécurité.">
+        <!--Balise Schema.org pour référencement Google-->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org/",
+              "@type": "Person",
+              "name": "Bernard VERA",
+              "url": "https://bernard-vera.github.io/Portfolio/",
+              "image": "https://bernard-vera.github.io/Portfolio/images/twitter.jpg",
+              "sameAs": "https://www.linkedin.com/in/bernardvera",
+              "jobTitle": "Développeur Web"  
+            }
+            </script> 
     </head>
     <body>
         <header>
             <div class="mw1320">
                 <nav class="flex space-between">
-                   
                     <img class="header-logo" src="images/photo.webp" alt="Photo de Bernard VERA">
                     <ul class="header-menu">
                         <li><a href="#Accueil">Accueil</a></li>
@@ -24,8 +46,6 @@
                         <li><a href="#realisations">Mes réalisations</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                   
-                    
                 </nav>
             </div>
         </header>
@@ -37,7 +57,6 @@
                     <h2>Développeur full-stack</h2>
                 </div>
             </div>
-
             <article id="a-propos" class="section">
                 <div class="boxed">
                     <div class="flex column mcenter">
@@ -50,47 +69,45 @@
                     </div>
                 </div>
             </article>
-
             <section id="competences" class="section dark">
                 <div class="boxed text-center">
                     <h2>Mes compétences</h2>
                     <div class="flex gap20 medium">
                         <div class="w14 skill">
-                            <img src="images/html-logo.png" alt="Logo HTML">
+                            <img src="images/html-logo.png" alt="Logo HTML" tabindex="0">
                             <h3>HTML</h3>
                         </div>
                         <div class="w14 skill">
-                            <img src="images/css-logo.png" alt="Logo CSS">
+                            <img src="images/css-logo.png" alt="Logo CSS" tabindex="0">
                             <h3>CSS</h3>
                         </div>
                         <div class="w14 skill">
-                            <img src="images/js-logo.png" alt="Logo Javascript">
+                            <img src="images/js-logo.png" alt="Logo Javascript" tabindex="0">
                             <h3>JS</h3>
                         </div>
                         <div class="w14 skill">
-                            <img src="images/react-logo.png" alt="Logo React">
+                            <img src="images/react-logo.png" alt="Logo React" tabindex="0">
                             <h3>REACT</h3>
                         </div>
                         <div class="w14 skill">
-                            <img src="images/node-logo.png" alt="Logo Node">
+                            <img src="images/node-logo.png" alt="Logo Node" tabindex="0">
                             <h3>NODE</h3>
                         </div>
                         <div class="w14 skill">
-                            <img src="images/mongo-logo.png" alt="Logo MongoDB">
+                            <img src="images/mongo-logo.png" alt="Logo MongoDB" tabindex="0">
                             <h3>MongoDB</h3>
                         </div>
                         <div class="w14 skill">
-                            <img src="images/seo-logo.png" alt="Logo SEO">
+                            <img src="images/seo-logo.png" alt="Logo SEO" tabindex="0">
                             <h3>SEO</h3>
                         </div>
                         <div class="w14 skill">
-                            <img src="images/github-logo.png" alt="Logo GitHub">
+                            <img src="images/github-logo.png" alt="Logo GitHub" tabindex="0">
                             <h3>GitHub</h3>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section id="realisations" class="section">
                 <div class="boxed text-center">
                     <h2>Mes réalisations</h2>
@@ -140,19 +157,16 @@
                     </div>
                 </div>
             </section>
-
             <div class="modal" id="modal-1" role="dialog">
                 <div class="modal-content">
-                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer la modale">
+                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer la modale" tabindex="0">
                     <div class="modal-header">
                         <h2>Booki</h2>
                     </div>
                     <div class="modal-body">
                         <div class="modal-container">
-                           
-                            <img class="modal-img w50" src="images/modal/modal_booki.webp" alt="Image du site Booki">
-                            
-                            <div class="modal-text  ">
+                            <img class="modal-img w50" src="images/modal/modal_booki.webp" alt="Image du site Booki" tabindex="0">        
+                            <div class="modal-text" tabindex="0">
                                 <h3>Projet</h3>
                                 <p>Création de la page d'accueil d'une agence de voyage</p>
                                 <br>
@@ -168,22 +182,21 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <a href="https://github.com/Bernard-VERA/Projet-2" target="_blank">GitHub</a>
-                        <a href="https://bernard-vera.github.io/Projet-2/" target="_blank"> Site </a>
+                        <a href="https://github.com/Bernard-VERA/Projet-2" target="_blank" tabindex="0">GitHub</a>
+                        <a href="https://bernard-vera.github.io/Projet-2/" target="_blank" tabindex="0"> Site </a>
                     </div> 
                 </div>
             </div>
-
             <div class="modal" id="modal-2" role="dialog">
                 <div class="modal-content">
-                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer">
+                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer" tabindex="0">
                     <div class="modal-header">
                         <h2>Sophie Bluel</h2>
                     </div>
                     <div class="modal-body">
                         <div class="modal-container">
-                            <img class="modal-img w50" src="images/modal/modal_bluel.webp" alt="Image du site Sophie Bluel">
-                            <div class="modal-text w50 ">
+                            <img class="modal-img w50" src="images/modal/modal_bluel.webp" alt="Image du site Sophie Bluel" tabindex="0">
+                            <div class="modal-text w50" tabindex="0">
                                 <h3>Projet</h3>
                                 <p>Créer une page web dynamique avec JavaScript, pour le portfolio de Sophie Bluel.</p>
                                 <br>
@@ -199,21 +212,20 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <a href="https://github.com/Bernard-VERA/Projet-3" target="_blank">GitHub</a>
+                        <a href="https://github.com/Bernard-VERA/Projet-3" target="_blank" tabindex="0">GitHub</a>
                     </div> 
                 </div>
             </div>
-
             <div class="modal" id="modal-3" role="dialog">
                 <div class="modal-content">
-                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer">
+                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer" tabindex="0">
                     <div class="modal-header">
                         <h2>Menu Maker by Qwenta</h2>
                     </div>
                     <div class="modal-body">
                         <div class="modal-container">
-                            <img class="modal-img w50" src="images/modal/modal_qwenta.webp" alt="Image du site Menu Maker">
-                            <div class="modal-text w50 ">
+                            <img class="modal-img w50" src="images/modal/modal_qwenta.webp" alt="Image du site Menu Maker" tabindex="0">
+                            <div class="modal-text w50" tabindex="0">
                                 <h3>Projet</h3>
                                 <p>Planifiez le développement du site de votre client</p>
                                 <br>
@@ -228,22 +240,20 @@
                             </div>            
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        
+                    <div class="modal-footer">   
                     </div> 
                 </div>
             </div>
-
             <div class="modal" id="modal-4" role="dialog">
                 <div class="modal-content">
-                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer">
+                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer" tabindex="0">
                     <div class="modal-header">
                         <h2>Nina Carducci</h2>
                     </div>
                     <div class="modal-body">
                         <div class="modal-container">
-                            <img class="modal-img w50" src="images/modal/modal_carducci.webp" alt="Image du site Nina Carducci">
-                            <div class="modal-text w50 ">
+                            <img class="modal-img w50" src="images/modal/modal_carducci.webp" alt="Image du site Nina Carducci" tabindex="0">
+                            <div class="modal-text w50" tabindex="0">
                                 <h3>Projet</h3>
                                 <p>Débuggez et optimisez un site de photographe (Nina Carducci).</p>
                                 <br>
@@ -261,22 +271,21 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <a href="https://github.com/Bernard-VERA/Projet-5" target="_blank">GitHub</a>
-                        <a href="https://bernard-vera.github.io/Projet-5/" target="_blank"> Site </a>
+                        <a href="https://github.com/Bernard-VERA/Projet-5" target="_blank" tabindex="0">GitHub</a>
+                        <a href="https://bernard-vera.github.io/Projet-5/" target="_blank" tabindex="0"> Site </a>
                     </div> 
                 </div>
             </div>
-
             <div class="modal" id="modal-5" role="dialog">
                 <div class="modal-content">
-                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer">
+                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer" tabindex="0">
                     <div class="modal-header">
                         <h2>Kasa</h2>
                     </div>
                     <div class="modal-body">
                         <div class="modal-container">
-                            <img class="modal-img w50" src="images/modal/modal_kasa.webp" alt="Image du site Kasa">
-                            <div class="modal-text w50 ">
+                            <img class="modal-img w50" src="images/modal/modal_kasa.webp" alt="Image du site Kasa" tabindex="0">
+                            <div class="modal-text w50" tabindex="0">
                                 <h3>Projet</h3>
                                 <p>Créez une application web de location immobilière avec React.</p>
                                 <br>
@@ -292,21 +301,20 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <a href="https://github.com/Bernard-VERA/kasa" target="_blank">GitHub</a>
+                        <a href="https://github.com/Bernard-VERA/kasa" target="_blank" tabindex="0">GitHub</a>
                     </div> 
                 </div>
             </div>
-
             <div class="modal" id="modal-6" role="dialog">
                 <div class="modal-content">
-                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer">
+                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer" tabindex="0">
                     <div class="modal-header">
                         <h2>Mon Vieux Grimoire</h2>
                     </div>
                     <div class="modal-body">
                         <div class="modal-container">
-                            <img class="modal-img w50" src="images/modal/modal_grimoire.webp" alt="Image du site Mon vieux grimoire">
-                            <div class="modal-text w50 ">
+                            <img class="modal-img w50" src="images/modal/modal_grimoire.webp" alt="Image du site Mon vieux grimoire" tabindex="0">
+                            <div class="modal-text w50" tabindex="0">
                                 <h3>Projet</h3>
                                 <p>Développez le back-end d'un site de notation de livres</p>
                                 <br>
@@ -322,21 +330,20 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <a href="https://github.com/Bernard-VERA/Projet-7" target="_blank">GitHub</a>
+                        <a href="https://github.com/Bernard-VERA/Projet-7" target="_blank" tabindex="0">GitHub</a>
                     </div> 
                 </div>
             </div>
-
             <div class="modal" id="modal-7" role="dialog">
                 <div class="modal-content">
-                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer">
+                    <img src="images/close.png" class="modal-close" data-dismiss="dialog" alt="Bouton fermer" tabindex="0">
                     <div class="modal-header">
                         <h2>Le Clerc d'Huissier</h2>
                     </div>
                     <div class="modal-body">
                         <div class="modal-container">
-                            <img class="modal-img w50" src="images/modal/modal_huissier.webp" alt="Image du site Le clerc d'huissier">
-                            <div class="modal-text w50 ">
+                            <img class="modal-img w50" src="images/modal/modal_huissier.webp" alt="Image du site Le clerc d'huissier" tabindex="0">
+                            <div class="modal-text w50" tabindex="0">
                                 <h3>Projet</h3>
                                 <p>Un site  d'information destiné aux employés des Huissiers</p>
                                 <br>
@@ -352,11 +359,10 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <a href="http://clercdhuissier.free.fr/" target="_blank"> Site </a>
+                        <a href="http://clercdhuissier.free.fr/" target="_blank" tabindex="0"> Site </a>
                     </div> 
                 </div>
             </div>
-
         </main>
         <footer id="contact" class="section dark">
             <div class="boxed text-center">
