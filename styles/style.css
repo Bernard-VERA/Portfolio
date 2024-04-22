@@ -72,14 +72,6 @@ header{
     filter: brightness(40%);
 }
 
-@keyframes mon_anim{
-    0%{
-        opacity: 0; 
-    }
-    100%{
-        opacity: 1;    
-    }
-}
 .slider-content{
     position: absolute;
     top: 50%;
@@ -87,11 +79,6 @@ header{
     transform: translate(-50%, -50%);
     text-align: center;
     text-wrap: balance;
-    animation-name: mon_anim;
-    animation-duration: 2500ms;
-    animation-delay: 200ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
 }
 
 h1{
