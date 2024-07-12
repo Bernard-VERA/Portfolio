@@ -234,25 +234,28 @@ p{
     opacity: 1;
 }
 
-.button-cv {
+.button-cv{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 40px;
-    cursor: pointer;     
+    cursor: pointer;   
 }
 
 .button-cv h2{
     margin: auto;
     text-align: center;
     padding: 8px 20px;
+    font-size: 2rem;
     border: 1px solid;
     border-radius: 20px;
     animation: wiggle 2s ease-in-out infinite;
+    -webkit-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
+    box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
 }
 
-/* Keyframes */
-@keyframes wiggle {
+@keyframes wiggle{
     0%, 7% {
       transform: rotateZ(0);
     }
@@ -276,20 +279,25 @@ p{
     }
   }
 
-  .button-cv a {
+  .button-cv a{
     text-decoration: none;
     color: #000000;
   }  
 
-  .button-cv h2:hover {
+  .button-cv h2:hover{
     background-color: #000000;
     color: azure;
   }
 
-  .cv-img {
+  .cv-img{
     display: flex;
     padding: 20px;
+    margin: auto;
     width: 85%;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
+    box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
   }
 
   .cv-footer{
@@ -310,6 +318,9 @@ p{
     background-color: white;
     color: #000000;
     border-radius: 25px;
+    -webkit-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
+    box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
 }
 
 .cv-footer a:hover{
@@ -368,7 +379,7 @@ p{
 }
 
 /* Copyright*/
-.copyright {
+.copyright{
    padding-top: 50px;
    font-size: 16px;
 }
@@ -730,7 +741,7 @@ p{
         display: none;
     }
 
-    header:hover .header-menu{
+    header:hover .header-menu {
         display: flex;
     }
 
