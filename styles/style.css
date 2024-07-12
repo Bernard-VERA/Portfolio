@@ -234,6 +234,93 @@ p{
     opacity: 1;
 }
 
+.button-cv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    cursor: pointer;     
+}
+
+.button-cv h2{
+    margin: auto;
+    text-align: center;
+    padding: 8px 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    animation: wiggle 2s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-4deg);
+    }
+    20% {
+      transform: rotateZ(4deg);
+    }
+    25% {
+      transform: rotateZ(-4deg);
+    }
+    30% {
+      transform: rotateZ(2deg);
+    }
+    35% {
+      transform: rotateZ(-2deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  .button-cv a {
+    text-decoration: none;
+    color: #000000;
+  }  
+
+  .button-cv h2:hover {
+    background-color: #000000;
+    color: azure;
+  }
+
+  .cv-img {
+    display: flex;
+    padding: 20px;
+    width: 85%;
+  }
+
+  .cv-footer{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.cv-footer a{
+    width: 20%;
+    text-align: center;
+    padding: 6px 35px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    color: #000000;
+    border-radius: 25px;
+}
+
+.cv-footer a:hover{
+    background-color: #000000;
+    color: white;
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02);
+    transition: .2s ease;
+}
+
 /* Contact*/
 .contact-links{
     display: flex;
@@ -606,6 +693,10 @@ p{
        width: 16px;
        height: auto;
     }
+
+    .cv-footer a {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 610px) {
@@ -726,6 +817,18 @@ p{
         font-size: 14px;
         padding: 4px 20px;
     }
+
+    .cv-footer {
+        gap: 40px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .cv-footer a {
+        width: 25%;
+        font-size: 12px;
+        padding: 4px 20px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -743,6 +846,11 @@ p{
 
     .modal-text p {
         font-size: 12px;
+    }
+
+    .cv-footer a {
+        font-size: 10px;
+        width: 35%;
     }
 }
 
