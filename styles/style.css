@@ -201,8 +201,9 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
-    width: max-content;
+    width: 90%;
     opacity: 0;
+    word-wrap: break-word;
     transition: .4s ease;
 }
 
