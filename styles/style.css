@@ -70,7 +70,14 @@ header{
     height: 100%;
     object-fit: cover;
     filter: brightness(40%);
+    animation-duration: 4s;
+    animation-name: fadein;
 }
+
+@keyframes fadein {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+    }
 
 .slider-content{
     position: absolute;
@@ -84,6 +91,25 @@ header{
 h1{
     color:azure;
     font-size: 4rem;
+    animation: pulse 1.5s;
+    animation-iteration-count: 5;
+}
+
+.slider-content h2 {
+    animation: pulse 1.5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
 }
 
 h2{
