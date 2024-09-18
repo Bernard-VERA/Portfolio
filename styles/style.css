@@ -36,7 +36,7 @@ header{
 
 .header-menu li a{
     text-decoration: none;
-    color:#000000;
+    color:#161616;
     display: block;
     padding: 5px 15px ;
     box-sizing: border-box;
@@ -61,7 +61,7 @@ header{
     width: 100%;
     min-height: 80vh;
     aspect-ratio: 16/9;
-    background: #000000;
+    background: #161616;
     position: relative;
 }
 
@@ -193,7 +193,7 @@ p{
 
 .skill h3{
     margin-top: 10px;
-    color: #000000;
+    color: #161616;
     text-align: center;
 }
 
@@ -308,11 +308,11 @@ p{
 
   .button-cv a{
     text-decoration: none;
-    color: #000000;
+    color: #161616;
   }  
 
   .button-cv h2:hover{
-    background-color: #000000;
+    background-color: #161616;
     color: azure;
   }
 
@@ -343,7 +343,7 @@ p{
     font-size: 16px;
     font-weight: 600;
     background-color: white;
-    color: #000000;
+    color: #161616;
     border-radius: 25px;
     -webkit-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
     -moz-box-shadow: 2px 1px 21px -1px rgba(0,0,0,0.47);
@@ -351,7 +351,7 @@ p{
 }
 
 .cv-footer a:hover{
-    background-color: #000000;
+    background-color: #161616;
     color: white;
     -ms-transform: scale(1.02); /* IE 9 */
     -webkit-transform: scale(1.02); /* Safari 3-8 */
@@ -517,12 +517,12 @@ p{
     font-size: 18px;
     font-weight: 600;
     background-color: white;
-    color: #000000;
+    color: #161616;
     border-radius: 25px;
 }
 
 .modal-footer a:hover{
-    background-color: #000000;
+    background-color: #161616;
     color: white;
     -ms-transform: scale(1.02); /* IE 9 */
     -webkit-transform: scale(1.02); /* Safari 3-8 */
