@@ -18,3 +18,9 @@ Les compétences sont indiquées clairement par leur logo et leur nom, dans des 
 Chaque projet est trés détaillé et s'ouvre dans un nouvel onglet.  
 L'ajout de nouveaux projets se fait facilement, en rajoutant quelques lignes de code dans le fichier `index.html`.  
 La mise en forme se fait automatiquement.
+
+----
+
+<p align="center" width="100%">
+    <img width="90%" src="https://github.com/Bernard-VERA/Portfolio/blob/master/images/portfolio.jpg"> 
+</p>
