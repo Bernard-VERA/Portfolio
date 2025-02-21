@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburger.style.display = 'none';
         closeMenu.style.display = 'block';
     });
-    
+
     // Au clic sur la croix, la croix disparait et le hamburger apparait
     closeMenu.addEventListener('click', function () {
         headerMenu.classList.remove('open');
@@ -59,19 +59,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeMenu = document.querySelector('.close-menu');
     const headerMenu = document.querySelector('.header-menu');
 
-    function handleResize() {
+    function handleResizeAndScroll() {
         if (window.innerWidth > 610) {
             headerMenu.classList.remove('open');
             hamburger.style.display = 'none';
             closeMenu.style.display = 'none';
         } else {
-            hamburger.style.display = 'block';
-            closeMenu.style.display = 'none';
+            if (!headerMenu.classList.contains('open')) {
+                hamburger.style.display = 'block';
+                closeMenu.style.display = 'none';
+            }
         }
     }
 
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Exécuter au chargement de la page
+    window.addEventListener('resize', handleResizeAndScroll);
+    window.addEventListener('scroll', handleResizeAndScroll);
+    handleResizeAndScroll(); // Exécuter au chargement de la page
 
     hamburger.addEventListener('click', function () {
         headerMenu.classList.add('open');
