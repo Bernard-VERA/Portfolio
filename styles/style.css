@@ -791,7 +791,7 @@ p{
     }
 
     .close-menu {
-        display: none;
+        display: block;
         background: none;
         border: none;
         font-size: 1.5rem;
@@ -801,7 +801,7 @@ p{
         right: 15px;
     }
 
-    header .header-menu {
+    .header-menu {
         position: fixed;
         top: 0;
         left: 50%;
