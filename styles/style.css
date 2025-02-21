@@ -783,7 +783,7 @@ p{
         display: block;
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         cursor: pointer;
         position: absolute;
         top: 15px;
@@ -791,10 +791,10 @@ p{
     }
 
     .close-menu {
-        display: block;
+        display: none;
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         cursor: pointer;
         position: absolute;
         top: 15px;
@@ -814,6 +814,7 @@ p{
         justify-content: center;
         gap: 5px;
         display: none;
+        font-size: 1rem;
     }
 
     .header-menu.open {
