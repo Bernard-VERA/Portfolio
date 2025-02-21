@@ -53,38 +53,3 @@ document.addEventListener('DOMContentLoaded', function () {
         closeMenu.style.display = 'none';
     });
 });
-// Cette fonction permet d'éviter que le menu Hamburger se voit lorsqu'on redimensionne la fenêtre à plus de 610px
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const closeMenu = document.querySelector('.close-menu');
-    const headerMenu = document.querySelector('.header-menu');
-
-    function handleResizeAndScroll() {
-        if (window.innerWidth > 610) {
-            headerMenu.classList.remove('open');
-            hamburger.style.display = 'none';
-            closeMenu.style.display = 'none';
-        } else {
-            if (!headerMenu.classList.contains('open')) {
-                hamburger.style.display = 'block';
-                closeMenu.style.display = 'none';
-            }
-        }
-    }
-
-    window.addEventListener('resize', handleResizeAndScroll);
-    window.addEventListener('scroll', handleResizeAndScroll);
-    handleResizeAndScroll(); // Exécuter au chargement de la page
-
-    hamburger.addEventListener('click', function () {
-        headerMenu.classList.add('open');
-        hamburger.style.display = 'none';
-        closeMenu.style.display = 'block';
-    });
-
-    closeMenu.addEventListener('click', function () {
-        headerMenu.classList.remove('open');
-        hamburger.style.display = 'block';
-        closeMenu.style.display = 'none';
-    });
-});
