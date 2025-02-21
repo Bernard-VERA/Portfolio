@@ -31,4 +31,57 @@ window.onload = () => {
             })
         });
     }  
-}
+};
+
+// Cette fonction permet d'afficher un hamburger menu en dessous de 610px (Mobiles)
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const closeMenu = document.querySelector('.close-menu');
+    const headerMenu = document.querySelector('.header-menu');
+
+    // Au clic sur le hamburger, le hamburger disparait et la croix apparait
+    hamburger.addEventListener('click', function () {
+        headerMenu.classList.add('open');
+        hamburger.style.display = 'none';
+        closeMenu.style.display = 'block';
+    });
+    
+    // Au clic sur la croix, la croix disparait et le hamburger apparait
+    closeMenu.addEventListener('click', function () {
+        headerMenu.classList.remove('open');
+        hamburger.style.display = 'block';
+        closeMenu.style.display = 'none';
+    });
+});
+// Cette fonction permet d'éviter que le menu Hamburger se voit lorsqu'on redimensionne la fenêtre à plus de 610px
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const closeMenu = document.querySelector('.close-menu');
+    const headerMenu = document.querySelector('.header-menu');
+
+    function handleResize() {
+        if (window.innerWidth > 610) {
+            headerMenu.classList.remove('open');
+            hamburger.style.display = 'none';
+            closeMenu.style.display = 'none';
+        } else {
+            hamburger.style.display = 'block';
+            closeMenu.style.display = 'none';
+        }
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Exécuter au chargement de la page
+
+    hamburger.addEventListener('click', function () {
+        headerMenu.classList.add('open');
+        hamburger.style.display = 'none';
+        closeMenu.style.display = 'block';
+    });
+
+    closeMenu.addEventListener('click', function () {
+        headerMenu.classList.remove('open');
+        hamburger.style.display = 'block';
+        closeMenu.style.display = 'none';
+    });
+});
