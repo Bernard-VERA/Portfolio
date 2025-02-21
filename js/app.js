@@ -53,3 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         closeMenu.style.display = 'none';
     });
 });
+
+window.addEventListener('resize', function() {
+    location.reload();
+});
