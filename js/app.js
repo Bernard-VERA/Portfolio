@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Fonction pour éviter l'affichage du bouton hamburger, en cas de redimensionnement (Portrait/paysage)
 let initialWidth = window.innerWidth;
 
 window.addEventListener('resize', function() {
