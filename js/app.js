@@ -54,6 +54,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+let initialWidth = window.innerWidth;
+
 window.addEventListener('resize', function() {
-    location.reload();
+    let newWidth = window.innerWidth;
+    if (newWidth !== initialWidth) {
+        location.reload();
+    }
+    initialWidth = newWidth;
 });
